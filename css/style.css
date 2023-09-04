@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     background-color: #782221 ;
     font-family: 'Raleway', sans-serif;
+    width: 1160px;
 }
 
 .entete__photo-nom,
@@ -9,3 +11,14 @@ h1, h2 {
     font-family: 'Lato', sans-serif;
 }
 
+.entete__adresse  {
+    background-color: #2c1d27;
+}
+
+h1 {
+    background-color: #dbc2a4;
+}
+
+.entete {
+    color: white;
+}

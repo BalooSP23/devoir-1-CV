@@ -49,6 +49,11 @@ h1, h2 {
     height: auto;
 }
 
+.entete__photo-nom a {
+    display: flex;
+    justify-content: center;
+}
+
 .entete__photo-nom {
     display: flex;
     flex-direction: column;
@@ -101,10 +106,14 @@ h1, h2 {
     margin: 0 15px;
 }
 
+.icones a:hover {
+    opacity: 60%;
+}
 .update {
     color: white;
     font-size: 1.1em;
 }
+
 
 .entete,
 .aside__a-propos p,
@@ -140,4 +149,30 @@ h1, h2 {
 .contenu__formations,
 .contenu__competences {
     margin-bottom: 50px;
+    position: relative;
+}
+
+.entete__adresse a {
+    text-decoration: none;
+    color: white;
+}
+
+.entete__adresse p a:hover {
+    text-decoration: underline;
+}
+
+.contenu__experiences:hover::after,
+.contenu__competences:hover::after,
+.contenu__formations:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: #782221;
+}
+
+.entete__photo-nom a img:hover {
+    cursor: zoom-in;
 }

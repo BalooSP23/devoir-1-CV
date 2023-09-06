@@ -49,6 +49,11 @@ h1, h2 {
     height: auto;
 }
 
+.entete__photo-nom a {
+    display: flex;
+    justify-content: center;
+}
+
 .entete__photo-nom {
     display: flex;
     flex-direction: column;
@@ -140,4 +145,9 @@ h1, h2 {
 .contenu__formations,
 .contenu__competences {
     margin-bottom: 50px;
+}
+
+.entete__adresse a {
+    text-decoration: none;
+    color: white;
 }

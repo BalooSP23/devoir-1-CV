@@ -1,7 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
-* {
-    background-color: #782221 ;
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    background-color: #dbc2a4;
+    padding-left: 20px;
+}
+
+.contenu-cv {
+    width: 1160px;
+    background-color: #782221 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: solid black 2px;
 }
 
 .entete__photo-nom,
@@ -9,3 +36,108 @@ h1, h2 {
     font-family: 'Lato', sans-serif;
 }
 
+.entete__adresse  {
+    background-color: #2c1d27;
+    font-style: italic;
+}
+
+.entete__photo-nom img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.879);
+    margin-top: 60px;
+    max-width: 15%;
+    height: auto;
+}
+
+.entete__photo-nom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.entete__photo-nom p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.entete__adresse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.aside {
+    width: 30%;
+    padding-right: 50px;
+}
+
+.contenu {
+    width: 70%;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.contenu__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aside__a-propos p {
+    text-align: justify;
+    padding-left: 30px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+.icones a {
+    margin: 0 15px;
+}
+
+.update {
+    color: white;
+    font-size: 1.1em;
+}
+
+.entete,
+.aside__a-propos p,
+.aside__langues ul,
+.aside__interets ul {
+    color: white;
+    font-size: 1.2em;
+}
+
+.aside__a-propos,
+.aside__langues,
+.aside__interets {
+    margin-bottom: 70px;
+}
+
+.contenu h1 {
+    position: relative;
+}
+
+.contenu h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    background-color: #782221;
+}
+
+
+
+.contenu__experiences,
+.contenu__formations,
+.contenu__competences {
+    margin-bottom: 50px;
+}
